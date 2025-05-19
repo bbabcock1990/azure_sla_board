@@ -1,0 +1,196 @@
+/* General Body and Font Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #000000; /* Black background */
+    color: #E0E0E0; /* Light gray text for contrast */
+    overflow-x: hidden;
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar { 
+    width: 8px; 
+    height: 8px; 
+}
+::-webkit-scrollbar-track { 
+    background: #181818; /* Very dark gray for track */
+}
+::-webkit-scrollbar-thumb { 
+    background: #444444; /* Dark gray for thumb */
+    border-radius: 4px; 
+}
+::-webkit-scrollbar-thumb:hover { 
+    background: #666666; /* Lighter dark gray on hover */
+}
+
+/* Header Styles */
+.header-title {
+    font-weight: 900;
+    font-size: 3.2rem; 
+    line-height: 1.1;
+    color: #00A3FF; /* Brighter Azure Blue for title */
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    margin-bottom: 0.5rem; 
+}
+.header-disclaimer {
+    color: #A0A0A0; /* Medium gray for disclaimer */
+    font-size: 0.8rem;
+    max-width: 48rem; 
+    margin: 0.25rem auto 1rem auto; 
+    padding: 0 1rem; 
+}
+
+/* Main Content and Grid Wrapper Styles */
+.main-content-area {
+    position: relative; 
+}
+
+.sla-grid-wrapper {
+    width: 100%;
+    overflow-x: auto; 
+    padding-bottom: 1rem;
+    scroll-behavior: smooth; 
+}
+
+/* Grid Container Styles */
+.sla-grid-container {
+    display: grid;
+    border-left: 1px solid #333333; /* Dark gray grid lines */
+    border-top: 1px solid #333333; 
+    min-width: 1800px; 
+}
+
+/* Grid Cell, Header, and Label Common Styles (Primarily for structure and borders) */
+.grid-header-category, .grid-cell, .sla-label {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 90px; 
+    text-align: center;
+    position: relative;
+    border-right: 1px solid #333333; /* Dark gray grid lines */
+    border-bottom: 1px solid #333333; 
+}
+
+/* Default Background for Grid Cells - will be overridden by JS for category columns */
+.grid-cell {
+    background-color: #1A1A1A; /* Very dark gray as a default cell background */
+    min-width: 140px; 
+}
+
+/* Specific Styles for Sticky Category Headers */
+.grid-header-category {
+    background-color: #0A0A0A; /* Slightly off-black for sticky headers */
+    color: #B0B0B0; /* Light gray for header text */
+    font-weight: 600;
+    font-size: 0.8rem;
+    min-height: 50px;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+/* Specific Styles for Sticky SLA Labels */
+.sla-label {
+    background-color: #0A0A0A; /* Slightly off-black for sticky labels */
+    font-weight: 600; 
+    color: #E0E0E0; 
+    justify-content: center;
+    min-width: 90px;
+    position: sticky;
+    left: 0;
+    z-index: 15;
+    font-size: 0.9rem;
+}
+
+/* Service Item Tile Styles */
+.service-item {
+    color: #FFFFFF; /* White text on dark tiles */
+    padding: 0.5rem 0.7rem; 
+    border-radius: 6px; 
+    margin-bottom: 0.4rem;
+    width: 90%;
+    font-size: 0.75rem; 
+    border: 1px solid rgba(255,255,255,0.05); /* Very subtle border */
+    cursor: pointer;
+    transition: transform 0.15s ease-out, box-shadow 0.2s ease-out, border-color 0.2s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px; 
+    box-shadow: 0 1px 2px rgba(0,0,0,0.4), 0 1px 1px rgba(0,0,0,0.3); /* Darker shadow */
+}
+.service-item:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5), 0 2px 4px rgba(0,0,0,0.4);
+    border-color: rgba(0, 163, 255, 0.7); /* Azure blue accent on hover */
+}
+.service-item-icon {
+    width: 24px; 
+    height: 24px;
+    margin-bottom: 0.3rem;
+    fill: currentColor; 
+}
+.service-item-name {
+    font-weight: 500; 
+    text-align: center; 
+}
+
+/* Darker, Muted Azure-inspired Category Colors for Service Items */
+.cat-ai-\+-machine-learning { background-color: #005A9E; } /* Dark Azure Blue */
+.cat-analytics { background-color: #007A7A; }          /* Dark Teal */
+.cat-compute { background-color: #B87300; }            /* Dark Orange/Brownish */
+.cat-databases { background-color: #5C2D91; }          /* Dark Purple */
+.cat-developer-tools { background-color: #004578; }    /* Deeper Azure Blue */
+.cat-identity, .cat-identity-\+-security { background-color: #3A3A3A; } /* Dark Gray */
+.cat-internet-of-things, .cat-iot-\+-mr { background-color: #006C80; } /* Dark Cyan */
+.cat-integration { background-color: #6A006A; }        /* Dark Magenta/Purple */
+.cat-management-and-governance, .cat-management-\+-governance { background-color: #4A4A4A; } /* Darker Medium Gray */
+.cat-media, .cat-media-\+-comms { background-color: #7A1D9A; } /* Dark Orchid */
+.cat-migration { background-color: #45216D; }          /* Very Dark Purple */
+.cat-networking { background-color: #00726D; }         /* Dark Teal Green */
+.cat-storage { background-color: #5E8300; }            /* Dark Olive Green */
+.cat-api-management { background-color: #00125E; }     /* Very Dark Navy */
+.cat-mixed-reality { background-color: #005A9E; }      /* Dark Azure Blue */
+.cat-security { background-color: #1D1D1D; }           /* Very Dark Gray / Off-Black */
+.cat-web { background-color: #00528A; }                /* Another Dark Azure Blue */
+.cat-other { background-color: #333333; }              /* Dark Gray */
+
+/* Tooltip Styles */
+.tooltip {
+    visibility: hidden;
+    opacity: 0;
+    background-color: #181818; /* Very dark gray for tooltip */
+    color: #D0D0D0; 
+    text-align: left;
+    padding: 1rem;
+    border-radius: 0.375rem; 
+    position: fixed; 
+    z-index: 50;
+    width: 320px; 
+    max-width: 90vw;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7); /* Stronger shadow on black bg */
+    transition: opacity 0.2s ease-out, visibility 0.2s ease-out;
+    border: 1px solid #444444; /* Dark gray border */
+    font-size: 0.8rem; 
+    line-height: 1.5;
+}
+.tooltip.visible {
+    visibility: visible;
+    opacity: 1;
+}
+.tooltip h3 {
+    font-size: 1rem; 
+    font-weight: 600;
+    color: #FFFFFF; 
+    margin-bottom: 0.6rem;
+    border-bottom: 1px solid #444444;
+    padding-bottom: 0.6rem;
+}
+.tooltip p { margin-bottom: 0.4rem; }
+.tooltip strong { color: #A0A0A0; }
+.tooltip a { color: #00A3FF; text-decoration: underline; }
+.tooltip a:hover { color: #66C7FF; }

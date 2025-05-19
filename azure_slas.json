@@ -1,0 +1,1282 @@
+[
+  {
+    "category": "Identity",
+    "name": "Microsoft Entra ID Basic and Microsoft Entra ID Premium",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "Downtime: Any period of time when users are unable to log in to the Microsoft Entra ID service, or Microsoft Entra ID fails to successfully emit the authentication and authorization tokens. Service Credit: 10% for <99.99%, 25% for <99.9%, 50% for <99%, 100% for <95%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/active-directory/",
+    "iconId": "identity",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/active-directory/fundamentals/whatis"
+  },
+  {
+    "category": "Identity",
+    "name": "Azure Active Directory B2C",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "Downtime: Total accumulated minutes during which the Azure AD B2C service is unavailable. A minute is considered unavailable if all attempts to process user sign-up and sign-in fail. Service Credit: 10% for <99.99%, 25% for <99.9%, 50% for <99%, 100% for <95%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/active-directory-b2c/",
+    "iconId": "identity",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/active-directory-b2c/overview"
+  },
+  {
+    "category": "Identity",
+    "name": "Microsoft Entra Domain Services",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Total accumulated minutes during which a given Managed Domain is unavailable. A minute is considered unavailable if all requests for domain authentication, LDAP bind, or DNS lookup fail. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/active-directory-ds/",
+    "iconId": "identity",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/active-directory-domain-services/overview"
+  },
+  {
+    "category": "Analytics",
+    "name": "Analysis Services",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Total accumulated minutes during which a given Server is unavailable. A minute is considered unavailable if more than 1% of all Client Operations completed during the minute return an Error Code. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/analysis-services/",
+    "iconId": "analytics",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/analysis-services/analysis-services-overview"
+  },
+  {
+    "category": "AI + Machine Learning",
+    "name": "Azure API for FHIR",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Uptime Percentage is calculated as Total Transaction Attempts less Failed Transactions divided by Total Transaction Attempts. Failed Transactions are requests that result in an Error Code or do not return a Success Code within 60 seconds. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/api-for-fhir/",
+    "iconId": "healthcare",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/healthcare-apis/fhir/overview"
+  },
+  {
+    "category": "API Management",
+    "name": "API Center Services",
+    "slaDisplay": "99.95%",
+    "slaValue": 0.9995,
+    "description": "Standard Plan scaled within a single region. Downtime: Total accumulated minutes during which a given API Center data plane is unavailable. A minute is considered unavailable if all attempts by users to execute API calls against API Center data plane result in an Error Code or do not return a response within five minutes. Service Credit: 10% for <99.95%, 25% for <99%. Free plan has no SLA.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/api-center/",
+    "iconId": "api",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/api-center/overview"
+  },
+  {
+    "category": "API Management",
+    "name": "API Management Services",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "Premium Tier deployments scaled across two or more regions. For Consumption, Basic, Standard, and single-region Premium, SLA is 99.95%. Downtime: Total accumulated Deployment Minutes during which the API Management Service is unavailable. A minute is considered unavailable if all continuous attempts to perform operations through the Proxy throughout the minute result in either an Error Code or do not return a Success Code within five minutes. Service Credit (99.99% tier): 10% for <99.99%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/api-management/",
+    "iconId": "api",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/api-management/api-management-key-concepts"
+  },
+  {
+    "category": "Developer Tools",
+    "name": "App Center",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to Build Service, Test Service, and Push Notification Service. Downtime: Total minutes during which the respective service is unavailable. A minute is unavailable if all continuous HTTP requests to perform operations result in an Error Code or no response within one minute. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/app-center/",
+    "iconId": "devops",
+    "serviceUrl": "https://learn.microsoft.com/en-us/appcenter/"
+  },
+  {
+    "category": "Developer Tools",
+    "name": "App Configuration",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Total accumulated minutes during which the Configuration Store is unavailable. A minute is considered unavailable when there is no connectivity throughout the minute between the Configuration Store and Microsoft's Internet gateway. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/app-configuration/",
+    "iconId": "devops",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/azure-app-configuration/overview"
+  },
+  {
+    "category": "Compute",
+    "name": "App Service",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "For Apps deployed across two or more Availability Zones in the same region. For Apps not using Availability Zones, SLA is 99.95%. Downtime: Total accumulated Deployment Minutes during which the App is unavailable (no connectivity to Microsoft's Internet gateway). Service Credit (99.99% tier): 10% for <99.99%, 25% for <99%, 100% for <95%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/app-service/",
+    "iconId": "web",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/app-service/overview"
+  },
+  {
+    "category": "Networking",
+    "name": "Application Gateway",
+    "slaDisplay": "99.95%",
+    "slaValue": 0.9995,
+    "description": "For Application Gateway Cloud Service (two or more medium/larger instances or auto-scale/zone-redundant deployments). Downtime: Total accumulated minutes during which the Application Gateway Cloud Service is unavailable. A minute is unavailable if all connection attempts fail. Service Credit: 10% for <99.95%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/application-gateway/",
+    "iconId": "networking",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/application-gateway/overview"
+  },
+  {
+    "category": "Networking",
+    "name": "Application Gateway for Containers",
+    "slaDisplay": "99.95%",
+    "slaValue": 0.9995,
+    "description": "Covers both control plane and data plane. Downtime: Control Plane or Data Plane unavailability. A minute is unavailable if all connections to ALB Controller (control plane) or a frontend (data plane) fail. Service Credit: 10% for <99.95%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/application-gateway-for-containers/",
+    "iconId": "networking",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/application-gateway/for-containers/overview"
+  },
+  {
+    "category": "Management and Governance",
+    "name": "Application Insights",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Query Availability SLA. Downtime: Total minutes data within an Application Insights Resource are unavailable (no HTTP operations resulted in a Success Code). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/application-insights/",
+    "iconId": "monitor",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview"
+  },
+  {
+    "category": "Management and Governance",
+    "name": "Azure Arc",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to Kubernetes configuration Azure resource on top of Azure Arc enabled Kubernetes. Downtime: Total accumulated minutes during which REST API operations for the Kubernetes configuration Azure resource are unavailable. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/azure-arc/",
+    "iconId": "arc",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/azure-arc/overview"
+  },
+  {
+    "category": "Management and Governance",
+    "name": "Automation",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to Desired State Configuration (DSC) and Process Automation. DSC: Downtime if DSC Agent Service is unavailable. Process Automation: Uptime based on Total Jobs vs Delayed Jobs. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/automation/",
+    "iconId": "automation",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/automation/overview"
+  },
+  {
+    "category": "Storage",
+    "name": "Azure Backup",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Total accumulated Deployment Minutes during which the Backup Service is unavailable for the Protected Item (first Failure to Back Up or Restore until successful operation, with retries every 30 mins). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/backup/",
+    "iconId": "backup",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/backup/backup-overview"
+  },
+  {
+    "category": "Networking",
+    "name": "Azure Bastion",
+    "slaDisplay": "99.95%",
+    "slaValue": 0.9995,
+    "description": "Downtime: Total accumulated minutes during which an Azure Bastion is unavailable (all connection attempts within the minute are unsuccessful). Service Credit: 10% for <99.95%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/bastion/",
+    "iconId": "bastion",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/bastion/bastion-overview"
+  },
+  {
+    "category": "Compute",
+    "name": "Batch",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Uptime Percentage = 100% - Average Error Rate. Error Rate is based on Failed Requests to perform operations against Batch accounts. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/batch/",
+    "iconId": "batch",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/batch/batch-technical-overview"
+  },
+  {
+    "category": "Integration",
+    "name": "BizTalk Services",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to Basic, Standard, and Premium tiers. Downtime: Total accumulated Deployment Minutes during which the BizTalk Service Environment is unavailable (no connectivity to Microsoft's Internet gateway). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/biztalk-services/",
+    "iconId": "integration",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/biztalk-services/biztalk-services-overview"
+  },
+  {
+    "category": "AI + Machine Learning",
+    "name": "Azure Bot Service",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to Premium Channels. Uptime Percentage based on Total API Requests vs Failed API Requests to Premium Channel's API Endpoint. Failed requests return Error Code or no response within 2 minutes. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/bot-service/",
+    "iconId": "bot",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/bot-service/bot-service-overview-introduction"
+  },
+  {
+    "category": "Databases",
+    "name": "Azure Cache for Redis",
+    "slaDisplay": "99.999%",
+    "slaValue": 0.99999,
+    "description": "For Enterprise/Enterprise Flash tier Cache deployed to 3+ Azure regions and 3+ Availability Zones in each, with active geo-replication. Other configurations: 99.99% (Enterprise/Flash, 3+ AZs in same region), 99.9% (Standard/Premium/Enterprise/Flash single region or fewer AZs). Basic tier no SLA. Downtime: Cache unavailable (no connectivity between Cache Endpoints and Microsoft's Internet gateway). Service Credit (99.999% tier): 10% for <99.999%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/cache-for-redis/",
+    "iconId": "cache",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-overview"
+  },
+  {
+    "category": "Management and Governance",
+    "name": "Azure Chaos Studio",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Sum of Action Minutes during which Chaos Studio is unavailable. A minute for an experiment is unavailable if at least one experiment stop request returns a 500 error. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/chaos-studio/",
+    "iconId": "chaos",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/chaos-studio/chaos-studio-overview"
+  },
+  {
+    "category": "Compute",
+    "name": "Cloud Services",
+    "slaDisplay": "99.95%",
+    "slaValue": 0.9995,
+    "description": "For all Internet facing roles that have two or more instances deployed in different Update Domains. Downtime: Total accumulated minutes that have no Role Instance Connectivity. Service Credit: 10% for <99.95%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/cloud-services/",
+    "iconId": "cloudservices",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/cloud-services/cloud-services-choose-me"
+  },
+  {
+    "category": "AI + Machine Learning",
+    "name": "Azure AI Search",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Uptime Percentage = 100% - Average Error Rate. Applies to Search Service Instance having 3+ Replicas for updates or 2+ Replicas for queries. Error Rate based on Failed Requests. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/search/",
+    "iconId": "search",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search"
+  },
+  {
+    "category": "AI + Machine Learning",
+    "name": "Azure AI Services",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to various AI APIs (except Azure OpenAI). Uptime Percentage based on Total Transaction Attempts vs Failed Transactions. Failed Transactions return an Error Code. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/cognitive-services/",
+    "iconId": "ai",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/ai-services/what-are-ai-services"
+  },
+   {
+    "category": "Networking",
+    "name": "Azure Communication Gateway",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "Downtime: Any period when Assigned Telephone Numbers are unable to initiate or receive voice calls through the Azure Communications Gateway. Service Credit: 25% for <99.99%, 50% for <98%, 100% for <95%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/communication-gateway/",
+    "iconId": "communication",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/communication-gateway/overview"
+  },
+  {
+    "category": "Developer Tools",
+    "name": "Azure Communication Services",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Total minutes Azure Communication Services is unavailable (all requests within the minute result in 5xx errors). Service Credit: 10% for <99.9%, 25% for <99%. Applies to individual service impacted.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/communication-services/",
+    "iconId": "communication",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/communication-services/overview"
+  },
+  {
+    "category": "Databases",
+    "name": "Azure Confidential Ledger",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Total accumulated minutes during which managed confidential ledgers were unavailable. A minute is unavailable if all continuous attempts to perform transactions (excluding create/update/delete of ledgers) return an Error Code or no Success Code within 5 seconds. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/confidential-ledger/",
+    "iconId": "security",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/confidential-ledger/overview"
+  },
+  {
+    "category": "Compute",
+    "name": "Azure Container Apps",
+    "slaDisplay": "99.95%",
+    "slaValue": 0.9995,
+    "description": "Downtime: Total accumulated minutes during which one or more Apps are unavailable (no connectivity between the App and Microsoft's Internet gateway). Service Credit: 10% for <99.95%, 25% for <99%, 100% for <95%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/container-apps/",
+    "iconId": "container",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/container-apps/overview"
+  },
+  {
+    "category": "Compute",
+    "name": "Azure Container Instances",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Total number of minutes within Maximum Available Minutes that have no Connectivity for a Container Group. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/container-instances/",
+    "iconId": "container",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/container-instances/container-instances-overview"
+  },
+  {
+    "category": "Compute",
+    "name": "Azure Container Registry",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to Basic, Standard, or Premium Managed Registry. Downtime: Total minutes Managed Registry is unavailable (all continuous attempts to send Registry Transactions receive an Error Code or do not respond within Maximum Processing Time). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/container-registry/",
+    "iconId": "container",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-intro"
+  },
+  {
+    "category": "Networking",
+    "name": "Content Delivery Network (CDN)",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Uptime Percentage is the percentage of HTTP transactions in which the CDN responds and delivers content without error, based on independent measurement system. Service Credit: 10% for <99.9%, 25% for <99.5%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/cdn/",
+    "iconId": "cdn",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/cdn/cdn-overview"
+  },
+  {
+    "category": "Databases",
+    "name": "Azure Cosmos DB",
+    "slaDisplay": "99.999%",
+    "slaValue": 0.99999,
+    "description": "Multiple Write Locations Availability or Read Availability for multi-region. Single-region with AZs: 99.995%. Single-region without AZs: 99.99%. Throughput SLA: 99.99%. Consistency SLA: 99.99%. Latency SLA: 99.99%. Applies to various APIs (NoSQL, MongoDB RU/vCore, Cassandra, Gremlin, Table, PostgreSQL). Specific conditions apply for each. Service Credit (highest tier example): 10% for <99.999%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/cosmos-db/",
+    "iconId": "database",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/cosmos-db/introduction"
+  },
+  {
+    "category": "Analytics",
+    "name": "Data Catalog",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Total accumulated minutes during which the Data Catalog is unavailable (all attempts by admins to manage users or users to execute API calls for Entries fail or no response within five minutes). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/data-catalog/",
+    "iconId": "analytics",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/data-catalog/overview"
+  },
+  {
+    "category": "Analytics",
+    "name": "Azure Data Explorer (Kusto)",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Total minutes during which a Cluster is unavailable (all continuous attempts to establish a connection to the Cluster returned an Error Code). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/data-explorer/",
+    "iconId": "analytics",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/data-explorer/data-explorer-overview"
+  },
+  {
+    "category": "Analytics",
+    "name": "Azure Data Factory",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to API Calls and Activity Runs. API Calls: Uptime based on Total Requests vs Failed Requests (error or no response within 2 mins). Activity Runs: Uptime based on Total Activity Runs vs Delayed Activity Runs (fail to start within 4 mins). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/data-factory/",
+    "iconId": "datafactory",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/data-factory/introduction"
+  },
+  {
+    "category": "Analytics",
+    "name": "Data Lake Analytics",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Uptime Percentage = 100% - Average Error Rate. Error Rate based on Failed Operations (error or no success code within specified times). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/data-lake-analytics/",
+    "iconId": "datalake",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-overview"
+  },
+  {
+    "category": "Storage",
+    "name": "Data Lake Storage Gen1",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Uptime Percentage = 100% - Average Error Rate. Error Rate based on Failed Operations (error or no success code within specified times). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/data-lake-store/",
+    "iconId": "datalake",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/data-lake-store/data-lake-store-overview"
+  },
+  {
+    "category": "Databases",
+    "name": "Azure Database for MariaDB",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "Downtime: Total minutes during which a Server is unavailable (all continuous attempts to establish a connection to the Server returned an Error Code). Service Credit: 10% for <99.99%, 25% for <99%, 100% for <95%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/mariadb/",
+    "iconId": "database",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/mariadb/overview"
+  },
+  {
+    "category": "Databases",
+    "name": "Azure Database for MySQL",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "Single Server or Flexible Server (zone-redundant HA). Flexible Server same-zone HA: 99.95%. Flexible Server no HA: 99.9%. Downtime: Server unavailable (all continuous connection attempts fail). Service Credit (99.99% tier): 10% for <99.99% & >=99%, 25% for <99% & >=95%, 100% for <95%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/mysql/",
+    "iconId": "database",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/mysql/overview"
+  },
+  {
+    "category": "Databases",
+    "name": "Azure Database for PostgreSQL",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "Single Server or Flexible Server (zone-redundant HA). Flexible Server same-zone HA: 99.95%. Flexible Server no HA: 99.9%. Downtime: Server unavailable (all continuous connection attempts fail or no response within a minute). Service Credit (99.99% tier): 10% for <99.99% & >=99%, 25% for <99% & >=95%, 100% for <95%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/postgresql/",
+    "iconId": "database",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/postgresql/overview"
+  },
+  {
+    "category": "Analytics",
+    "name": "Azure Databricks",
+    "slaDisplay": "99.95%",
+    "slaValue": 0.9995,
+    "description": "Downtime: Total accumulated minutes of unavailability across all Azure Databricks workspaces. A minute is unavailable if all continual attempts to establish a connection to the Azure Databricks Gateway fail. Service Credit: 10% for <99.95%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/databricks/",
+    "iconId": "databricks",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/databricks/introduction/"
+  },
+  {
+    "category": "Analytics",
+    "name": "Microsoft Azure Data Manager for Energy",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to Standard Tier. Uptime Percentage based on Total API Requests vs Failed API Requests (requests that result in an Error Code). Developer Tier no SLA. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/data-manager-for-energy/",
+    "iconId": "analytics",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/energy-data-services/overview"
+  },
+  {
+    "category": "Networking",
+    "name": "Azure DDoS Protection",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "Downtime: Total minutes where protected Azure resources were not available due to DDoS Protection not mitigating an attack which directly resulted in underlying Azure resources not meeting respective SLA. Service Credit: 10% for <99.99%, 25% for <99.95%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/ddos-protection/",
+    "iconId": "security",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/ddos-protection/ddos-protection-overview"
+  },
+  {
+    "category": "Security",
+    "name": "Azure Defender",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Total accumulated minutes for which Security Monitoring information of a given Protected Node is unavailable (all continuous attempts to retrieve Security Monitoring information result in Error Code or no Success Code within two minutes). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/azure-defender/",
+    "iconId": "security",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction"
+  },
+  {
+    "category": "Security",
+    "name": "Defender External Attack Surface Management",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Query Availability Percentage. Downtime: Total minutes data in a Defender EASM resource are unavailable (no HTTP operations resulted in a Success Code). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/defender-easm/",
+    "iconId": "security",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/external-attack-surface-management/overview"
+  },
+  {
+    "category": "Developer Tools",
+    "name": "Azure DevOps",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to Azure DevOps Services Users, User-Based Extensions, and Azure Pipelines. Downtime: Service unavailable (all continuous HTTP requests to perform operations result in Error Code or no response). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/devops/",
+    "iconId": "devops",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/devops/user-guide/what-is-azure-devops"
+  },
+  {
+    "category": "Compute",
+    "name": "Microsoft Dev Box",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Per-Dev Box Uptime Percentage. Downtime: Period in which all connection attempts by a specific user to a specific Dev Box were unsuccessful. Service Credit (Per-Dev Box): 10% for <99.9%, 25% for <99%, 100% for <95%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/dev-box/",
+    "iconId": "devbox",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/dev-box/overview"
+  },
+  {
+    "category": "Internet of Things",
+    "name": "Azure Digital Twins",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Total accumulated Deployment Minutes during which the Azure Digital Twins instance is unavailable (all continuous attempts to send Messages or perform API Operations return Error Code or no Success Code within five minutes). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/digital-twins/",
+    "iconId": "iot",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/digital-twins/overview"
+  },
+  {
+    "category": "Networking",
+    "name": "Azure DNS",
+    "slaDisplay": "100%",
+    "slaValue": 1.0,
+    "description": "Downtime: Total accumulated minutes during which the DNS Zone is unavailable (DNS response not received within two seconds to a valid DNS Request to all name servers, with retries for 60s). Service Credit: 10% for <100%, 25% for <99.99%, 100% for <99.5%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/dns/",
+    "iconId": "networking",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/dns/dns-overview"
+  },
+  {
+    "category": "Networking",
+    "name": "Azure DNS Private Resolver",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "Downtime: Total accumulated minutes during which the Azure DNS Private Resolver endpoint is unavailable (DNS response not received within two seconds to a valid DNS Request to all name servers, with retries for 60s). Service Credit: 10% for <99.99%, 25% for <99.9%, 100% for <99.5%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/dns-private-resolver/",
+    "iconId": "networking",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/dns/dns-private-resolver-overview"
+  },
+  {
+    "category": "Storage",
+    "name": "Elastic SAN SLA",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "Monthly Uptime Percentage per volume. Calculated based on Total Storage Transactions vs Failed Storage Transactions. Credits vary based on number of volumes and percentage of volumes not meeting SLA. Example credit: 5% for <99.99% if >10 volumes and >10% don't meet SLA.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/elastic-san/",
+    "iconId": "storage",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/storage/elastic-san/elastic-san-overview"
+  },
+  {
+    "category": "Integration",
+    "name": "Event Grid",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "Downtime: Total minutes Event Grid is unavailable (all requests to publish a message return Error Code or no Success Code within one minute). Service Credit: 10% for <99.99%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/event-grid/",
+    "iconId": "eventgrid",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/event-grid/overview"
+  },
+  {
+    "category": "Integration",
+    "name": "Event Hubs",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "Premium and Dedicated tiers. Basic and Standard tiers: 99.95%. Downtime: Event Hub unavailable (all continuous attempts to send/receive Messages or perform operations return Error Code or no Success Code within five minutes). Service Credit (99.99% tier): 10% for <99.99%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/event-hubs/",
+    "iconId": "eventhubs",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-about"
+  },
+  {
+    "category": "Networking",
+    "name": "Azure ExpressRoute",
+    "slaDisplay": "99.95%",
+    "slaValue": 0.9995,
+    "description": "For 2+ Site Configuration. Metro Site Configuration: 99.9%. Single Site Configuration: 99.0%. Downtime: Dedicated Circuit unavailable (all attempts to establish IP-level connectivity to ER Gateway fail for >30s). Service Credit (99.95% tier): 10% for <99.95%, 25% for <99.9%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/expressroute/",
+    "iconId": "expressroute",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-introduction"
+  },
+  {
+    "category": "Networking",
+    "name": "Azure ExpressRoute Traffic Collector",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Total minutes data in ExpressRoute Traffic Collector are unavailable (no collected flow records delivered for >5 minutes). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/expressroute-traffic-collector/",
+    "iconId": "expressroute",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/expressroute/expressroute-traffic-collector"
+  },
+  {
+    "category": "Storage",
+    "name": "Azure Files Premium Tier",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "Applies to ZRS or LRS. Downtime: Total minutes during which all requests against the File Share have failed due to a Service Side Issue. Service Credit: 10% for <99.99%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/files/",
+    "iconId": "storage",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/storage/files/storage-files-introduction"
+  },
+  {
+    "category": "Networking",
+    "name": "Azure Firewall",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "Deployed within two or more Availability Zones. Single Availability Zone: 99.95%. Downtime: Azure Firewall Service unavailable (all connection attempts unsuccessful). Service Credit (99.99% tier): 10% for <99.99%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/firewall/",
+    "iconId": "firewall",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/firewall/overview"
+  },
+  {
+    "category": "Web",
+    "name": "Azure Fluid Relay",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Excludes Basic Tier. Downtime: Total accumulated minutes during which service calls for the Azure Fluid Relay resource are unavailable. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/fluid-relay/",
+    "iconId": "web",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/azure-fluid-relay/overview/overview"
+  },
+  {
+    "category": "Networking",
+    "name": "Azure Front Door and Azure Front Door (classic)",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "Uptime Percentage is the percentage of HTTP transactions in which Azure Front Door responds and delivers content without error, based on independent measurement system. Service Credit: 10% for <99.99%, 25% for <99.9%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/frontdoor/",
+    "iconId": "frontdoor",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview"
+  },
+  {
+    "category": "Compute",
+    "name": "Azure Functions",
+    "slaDisplay": "99.95%",
+    "slaValue": 0.9995,
+    "description": "Applies to Consumption Plan, Flex Consumption Plan, Premium Plan, or Dedicated App Service Plan. Consumption Plan: Uptime based on Total Triggered Executions vs Unavailable Executions. Other Plans: Downtime if no connectivity between host plan and Microsoft's Internet gateway. Service Credit: 10% for <99.95%, 25% for <99%, (100% for <95% on Consumption Plan).",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/functions/",
+    "iconId": "functions",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-overview"
+  },
+  {
+    "category": "Networking",
+    "name": "Global Secure Access",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Microsoft Entra Private Access and Microsoft Entra Internet Access. Downtime: Any period when Global Secure Access is unavailable to accept or process Transactions or Sessions. Service Credit: 25% for <99.9%, 50% for <99%, 100% for <95%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/global-secure-access/",
+    "iconId": "security",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/global-secure-access/overview-what-is-global-secure-access"
+  },
+  {
+    "category": "Analytics",
+    "name": "HDInsight",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Total accumulated Deployment Minutes when the HDInsight Service is unavailable (all continual attempts to establish a connection to the Cluster Internet Gateway fail). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/hdinsight/",
+    "iconId": "hdinsight",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/hdinsight/hdinsight-overview"
+  },
+  {
+    "category": "AI + Machine Learning",
+    "name": "Azure Health Data Services (excluding the MedTech Service)",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Uptime Percentage for each API service (excluding MedTech) based on Total Transaction Attempts vs Failed Transactions (requests that return an Error Code). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/health-data-services/",
+    "iconId": "healthcare",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/healthcare-apis/healthcare-apis-overview"
+  },
+  {
+    "category": "AI + Machine Learning",
+    "name": "Health Bot",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to Microsoft Health Bot Channels (Webchat, Direct Line). Uptime Percentage based on Total API Requests vs Failed API Requests to Channels API Endpoint (error or no response within 2 mins). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/health-bot/",
+    "iconId": "bot",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/health-bot/overview"
+  },
+  {
+    "category": "Security",
+    "name": "Azure Information Protection",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Any period when end users cannot create or consume IRM documents and email. Service Credit: 25% for <99.9%, 50% for <99%, 100% for <95%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/information-protection/",
+    "iconId": "security",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/information-protection/what-is-information-protection"
+  },
+  {
+    "category": "Internet of Things",
+    "name": "Azure IoT Central",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Total accumulated minutes during which IoT Central is unavailable (all continuous attempts to send/receive Messages or perform Device Identity Operations return Error Code or no Success Code within five minutes). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/iot-central/",
+    "iconId": "iot",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/iot-central/core/overview-iot-central"
+  },
+  {
+    "category": "Internet of Things",
+    "name": "Azure IoT Hub",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to IoT Hub and IoT Hub Device Provisioning Service. IoT Hub: Downtime if unavailable for sending/receiving Messages or Device Identity Operations. Device Provisioning: Downtime if unavailable for device registration or enrollment/registration record operations. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/iot-hub/",
+    "iconId": "iot",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/iot-hub/about-iot-hub"
+  },
+  {
+    "category": "Security",
+    "name": "Key Vault",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "Downtime: Total accumulated minutes during which the key vault is unavailable (all continuous attempts to perform transactions, excluding create/update/delete of vaults/keys/secrets, return Error Code or no Success Code within 5 seconds). Service Credit: 10% for <99.99%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/key-vault/",
+    "iconId": "keyvault",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/key-vault/general/overview"
+  },
+  {
+    "category": "Security",
+    "name": "Azure Key Vault Managed HSM",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Total accumulated minutes during which the managed HSM is unavailable (all continuous attempts to perform transactions, excluding certain management operations, return Error Code or no Success Code within 5 seconds). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/key-vault-managed-hsm/",
+    "iconId": "keyvault",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/key-vault/managed-hsm/overview"
+  },
+  {
+    "category": "Compute",
+    "name": "Azure Kubernetes Service (AKS)",
+    "slaDisplay": "99.95%",
+    "slaValue": 0.9995,
+    "description": "For AKS Clusters that use Availability Zones. For clusters not using AZs, SLA is 99.9%. Downtime: No connectivity to Kubernetes API Server. Service Credit (99.95% tier): 10% for <99.95%, 25% for <99%, 100% for <95%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/kubernetes-service/",
+    "iconId": "aks",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes"
+  },
+  {
+    "category": "Compute",
+    "name": "Azure Lab Services",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Total accumulated minutes that have no Lab Virtual Machine Connectivity. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/lab-services/",
+    "iconId": "labservices",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/lab-services/lab-services-overview"
+  },
+  {
+    "category": "Networking",
+    "name": "Azure Load Balancer",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "Applies to Azure Standard Load Balancer serving two or more Healthy Virtual Machines. Basic Load Balancer no SLA. Downtime: Azure Standard Load Balancer unavailable (all Healthy VMs have no Connectivity through Load Balanced Endpoint). Service Credit: 10% for <99.99%, 25% for <99.9%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/load-balancer/",
+    "iconId": "loadbalancer",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-overview"
+  },
+  {
+    "category": "Developer Tools",
+    "name": "Azure Load Testing",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Load Test Resource unavailable (all continuous HTTP requests to perform operations result in Error Code or no response in 5 minutes). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/load-testing/",
+    "iconId": "devops",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/load-testing/overview-what-is-azure-load-testing"
+  },
+  {
+    "category": "Management and Governance",
+    "name": "Log Analytics (Query Availability SLA)",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Total minutes data in a Log Analytics Workspace are unavailable (no HTTP operations resulted in a Success Code). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/log-analytics/",
+    "iconId": "loganalytics",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/azure-monitor/logs/log-analytics-overview"
+  },
+  {
+    "category": "Integration",
+    "name": "Logic Apps",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Total accumulated Deployment Minutes during which the Logic App is unavailable (no connectivity between Logic App and Microsoft's Internet gateway). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/logic-apps/",
+    "iconId": "logicapps",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/logic-apps/logic-apps-overview"
+  },
+  {
+    "category": "AI + Machine Learning",
+    "name": "Azure Machine Learning",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to Real Time Scoring and compute management. Real Time Scoring: Uptime based on Total Transaction Attempts vs Failed Transactions (error or no success code within 600s). Compute Management: Uptime based on Total Transaction Attempts vs Failed Transactions (error or no success code within 30s). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/machine-learning/",
+    "iconId": "ai",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning"
+  },
+  {
+    "category": "Management and Governance",
+    "name": "Azure Managed Grafana",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Workspace unavailable (all continuous HTTP requests to perform operations result in Error Code or no response). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/managed-grafana/",
+    "iconId": "monitor",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/managed-grafana/overview"
+  },
+  {
+    "category": "Databases",
+    "name": "Azure Managed Instance for Apache Cassandra",
+    "slaDisplay": "99.999%",
+    "slaValue": 0.99999,
+    "description": "For a Cassandra Cluster deployed with data centers in multiple regions and Availability Zone support enabled. Other configurations: 99.99% (single region AZ), 99.95% (single region no AZ or compliant network). Downtime: No connectivity to a quorum of Nodes in the Cassandra Data Center. Service Credit (99.999% tier): 10% for <99.999%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/managed-instance-for-apache-cassandra/",
+    "iconId": "apache_cassandra_mi",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/managed-instance-apache-cassandra/overview"
+  },
+  {
+    "category": "Web",
+    "name": "Azure Maps",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Uptime Percentage for a given Azure Map API based on Total Transaction Attempts vs Failed Transactions (error or no success code within 60s). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/maps/",
+    "iconId": "maps",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/azure-maps/about-azure-maps"
+  },
+  {
+    "category": "Media",
+    "name": "Media Services",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to Encoding, Media Indexer, Streaming, Live Channels, Content Protection, Video Indexer. Each has specific uptime definitions. Example (Encoding): Uptime based on Total Transaction Attempts vs Failed Transactions (no success code within 30s). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/media-services/",
+    "iconId": "media",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/media-services/latest/media-services-overview"
+  },
+  {
+    "category": "AI + Machine Learning",
+    "name": "MedTech service",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Uptime Percentage based on Total Minutes Available vs Minutes Unavailable (service not successfully reading from configured data source or not available to read). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/medtech-service/",
+    "iconId": "healthcare",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/healthcare-apis/iot/overview"
+  },
+  {
+    "category": "Analytics",
+    "name": "Microsoft Fabric",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime Minutes: Total accumulated minutes when a Capacity is unable to be utilized in applicable Fabric features (Power BI, Data Factory, Data Engineering, etc.). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/microsoft-fabric/",
+    "iconId": "fabric",
+    "serviceUrl": "https://learn.microsoft.com/en-us/fabric/get-started/microsoft-fabric-overview"
+  },
+  {
+    "category": "AI + Machine Learning",
+    "name": "Microsoft Genomics",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Total minutes Microsoft Genomics is unavailable (all continuous attempts to send authenticated Genomics service REST API requests return Error Code or no response within the minute). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/genomics/",
+    "iconId": "genomics",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/genomics/overview-what-is-genomics"
+  },
+  {
+    "category": "Security",
+    "name": "Microsoft Sentinel",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Query Availability Percentage. Downtime: Total minutes data in Microsoft Sentinel are unavailable (no HTTP operations resulted in a Success Code). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/sentinel/",
+    "iconId": "sentinel",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/sentinel/overview"
+  },
+  {
+    "category": "Web",
+    "name": "Mobile Services",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to Standard and Premium tiers. Uptime Percentage based on Total Transaction Attempts vs Failed Transactions (requests that result in Error Code or no Success Code). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/mobile-services/",
+    "iconId": "mobile",
+    "serviceUrl": "https://azure.microsoft.com/en-us/products/app-service/mobile/"
+  },
+  {
+    "category": "Management and Governance",
+    "name": "Azure Monitor",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to Alerts, Notification Delivery, and managed service for Prometheus. Alerts: Downtime if Alert Rule unavailable. Notification Delivery: Downtime if Action Group unavailable. Prometheus: Query Availability based on retrieving metric data. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/monitor/",
+    "iconId": "monitor",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/azure-monitor/overview"
+  },
+  {
+    "category": "Storage",
+    "name": "Azure NetApp Files",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "Downtime: Total accumulated minutes that have no Volume Connectivity in the Azure region. Service Credit: 10% for <99.99%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/netapp/",
+    "iconId": "storage",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-introduction"
+  },
+  {
+    "category": "Networking",
+    "name": "Network Watcher",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Uptime Percentage based on Maximum Diagnostic Checks vs Failed Diagnostic Checks (error or no response within Maximum Processing Time). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/network-watcher/",
+    "iconId": "networkwatcher",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/network-watcher/network-watcher-overview"
+  },
+  {
+    "category": "Integration",
+    "name": "Notification Hubs",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to Basic and Standard tiers. Downtime: Notification Hub unavailable (all continuous attempts to send notifications or perform registration management return Error Code or no Success Code within five minutes). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/notification-hubs/",
+    "iconId": "notificationhubs",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/notification-hubs/notification-hubs-push-notification-overview"
+  },
+  {
+    "category": "Compute",
+    "name": "On Demand Capacity Reservations for Azure Virtual Machines",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Uptime Percentage per Reserved Unit. Downtime: Accumulated Minutes not Available for Deployment. Service Credit (per Reserved Unit): 10% for <99.9%, 25% for <99%, 100% for <95%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/capacity-reservation/",
+    "iconId": "vm",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/virtual-machines/capacity-reservation-overview"
+  },
+  {
+    "category": "AI + Machine Learning",
+    "name": "Azure OpenAI Service",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Uptime Percentage = 100% - Average Error Rate (based on Requests returning Error Code). Provisioned Throughput Managed Deployments have an additional Latency SLA (99% Average Attainment Percentage). Service Credit (Uptime): 10% for <99.9%, 25% for <99%. Service Credit (Latency): 10% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/openai/",
+    "iconId": "ai",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/ai-services/openai/overview"
+  },
+  {
+    "category": "Networking",
+    "name": "Azure Operator Service Manager",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: A minute is downtime if all continuous attempts to create, update or view resources of the service return an Error Code or no Success Code within two minutes. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/operator-service-manager/",
+    "iconId": "networking",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/operator-service-manager/overview"
+  },
+  {
+    "category": "Networking",
+    "name": "Azure Orbital Ground Station",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Successful Contact Percentage. Downtime: Time during a Scheduled Contact when customer is unable to pass data end-to-end due to Azure Orbital Ground Station Service failure, or cancellation of a confirmed Scheduled Contact. Service Credit: 10% for <99.9%, 25% for <98%, 100% for <95%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/orbital-ground-station/",
+    "iconId": "networking",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/orbital/overview"
+  },
+  {
+    "category": "Developer Tools",
+    "name": "Microsoft Playwright Testing",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Microsoft Playwright Testing Resource unavailable (all continuous HTTP requests to perform operations result in Error Code or no response in 5 minutes). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/playwright-testing/",
+    "iconId": "devops",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/playwright-testing/overview-what-is-microsoft-playwright-testing"
+  },
+  {
+    "category": "Networking",
+    "name": "Azure Private 5G Core",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Edge service: Downtime if service does not respond to/process Control Plane Operations or <99.9% packets forwarded. Online service: Downtime if attempts to manage resources fail. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/private-5g-core/",
+    "iconId": "networking",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/private-5g-core/private-5g-core-overview"
+  },
+  {
+    "category": "Networking",
+    "name": "Azure Private Link",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "Downtime: Azure Private Link Service or Azure Private Endpoint unavailable (all attempts to connect through Azure Private Endpoint unsuccessful). Service Credit: 10% for <99.99%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/private-link/",
+    "iconId": "privatelink",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/private-link/private-link-overview"
+  },
+  {
+    "category": "Management and Governance",
+    "name": "Microsoft Purview",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to API calls for subscription-based portions. Uptime Percentage based on Total Requests vs Failed Requests (requests that return an Error Code). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/purview/",
+    "iconId": "purview",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/purview/overview"
+  },
+  {
+    "category": "Compute",
+    "name": "Azure Red Hat OpenShift",
+    "slaDisplay": "99.95%",
+    "slaValue": 0.9995,
+    "description": "Downtime: Azure Red Hat OpenShift cluster API endpoint unavailable (all attempts to connect to cluster API endpoint unsuccessful). Service Credit: 10% for <99.95%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/red-hat-openshift/",
+    "iconId": "openshift",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/openshift/intro-openshift"
+  },
+  {
+    "category": "Mixed Reality",
+    "name": "Remote Rendering",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to Conversion REST API Transactions and Rendering Sessions. Conversion: Uptime based on Total Transaction Attempts vs Failed Transactions (error within 30s). Rendering Sessions: Downtime if no External Connectivity. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/remote-rendering/",
+    "iconId": "mixedreality",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/remote-rendering/overview/overview"
+  },
+  {
+    "category": "Networking",
+    "name": "Azure Route Server",
+    "slaDisplay": "99.95%",
+    "slaValue": 0.9995,
+    "description": "Downtime: Azure Route Server unavailable (all attempts to connect to Azure Route Server unsuccessful). Service Credit: 10% for <99.95%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/route-server/",
+    "iconId": "networking",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/route-server/overview"
+  },
+  {
+    "category": "Compute",
+    "name": "SAP HANA on Azure Large Instances",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "For High Availability Pair. Single Instance: 99.9%. Downtime: No SAP HANA on Azure Connectivity. Service Credit (HA Pair): 10% for <99.99%, 25% for <99.9%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/sap-hana-large-instances/",
+    "iconId": "sap",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/sap/hana/large-instances/hana-overview-architecture"
+  },
+  {
+    "category": "Integration",
+    "name": "Scheduler",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Total accumulated minutes during which one or more Scheduled Jobs is in a state of delayed execution (not begun executing >30 mins after Planned Execution Time). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/scheduler/",
+    "iconId": "scheduler",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/scheduler/scheduler-intro"
+  },
+  {
+    "category": "Integration",
+    "name": "Service Bus",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "Queues and Topics in Premium tier deployed with partitioned namespaces in regions with Availability Zone support. Queues/Topics without partitioned namespaces or Relays: 99.9%. Downtime: Queue/Topic or Relay unavailable (all continuous attempts to operate return Error Code or no Success Code within five minutes). Service Credit (99.99% tier): 10% for <99.99%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/service-bus/",
+    "iconId": "servicebus",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview"
+  },
+  {
+    "category": "Web",
+    "name": "Azure SignalR Service",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to Standard tiers. Downtime: SignalR Service unavailable (all attempts to send SignalR Transactions return Error Code or no Success Code within one minute). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/signalr-service/",
+    "iconId": "signalr",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/azure-signalr/signalr-overview"
+  },
+  {
+    "category": "Migration",
+    "name": "Azure Site Recovery",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "For Azure-to-Azure or On-Premises-to-Azure Failover. RTO for On-Prem-to-Azure & Azure-to-Azure: 1 hour (100% credit if >1 hour). Downtime: Failover unsuccessful due to Site Recovery Service unavailability (with retries). Service Credit (Uptime): 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/site-recovery/",
+    "iconId": "siterecovery",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-overview"
+  },
+  {
+    "category": "Mixed Reality",
+    "name": "Spatial Anchors",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Uptime Percentage based on Total Transaction Attempts vs Failed Transactions (requests to API that return an Error Code). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/spatial-anchors/",
+    "iconId": "mixedreality",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/spatial-anchors/overview"
+  },
+  {
+    "category": "Compute",
+    "name": "Azure Spring Apps",
+    "slaDisplay": "99.95%",
+    "slaValue": 0.9995,
+    "description": "Enterprise Tier. Standard Tier: 99.9%. Basic Tier no SLA. Downtime: App unavailable (all continuous attempts to connect between App and Microsoft's Internet gateway or Spring Apps Service Runtime fail or no success code within five minutes). Service Credit (Enterprise): 10% for <99.95%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/spring-apps/",
+    "iconId": "springapps",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/spring-apps/overview"
+  },
+  {
+    "category": "Databases",
+    "name": "Azure SQL Database",
+    "slaDisplay": "99.995%",
+    "slaValue": 0.99995,
+    "description": "General Purpose, Business Critical, Premium or Hyperscale tiers configured for Zone Redundant Deployments. Non-Zone Redundant (Hyperscale, Business Critical, Premium, General Purpose) or Basic/Standard: 99.99%. Downtime: Database unavailable (all continuous connection attempts fail). RPO/RTO SLAs for geo-replication. Service Credit (99.995% tier): 10% for <99.995%, 25% for <99%, 100% for <95%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/sql-database/",
+    "iconId": "database",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview"
+  },
+  {
+    "category": "Databases",
+    "name": "Azure SQL Managed Instance",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "Applies to Business Critical and General Purpose tiers with Compliant Network Configuration. Downtime: Instance unavailable (all continuous connection attempts fail). Service Credit: 10% for <99.99%, 25% for <99%, 100% for <95%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/sql-managed-instance/",
+    "iconId": "database",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview"
+  },
+  {
+    "category": "Databases",
+    "name": "SQL Server Stretch Database",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Database unavailable (all continuous connection attempts fail). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/sql-server-stretch-database/",
+    "iconId": "database",
+    "serviceUrl": "https://learn.microsoft.com/en-us/sql/sql-server/stretch-database/stretch-database"
+  },
+  {
+    "category": "Web",
+    "name": "Static Web Apps",
+    "slaDisplay": "99.95%",
+    "slaValue": 0.9995,
+    "description": "Downtime: App unavailable (no connectivity between App and Microsoft's Internet gateway). Service Credit: 10% for <99.95%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/static-web-apps/",
+    "iconId": "web",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/static-web-apps/overview"
+  },
+  {
+    "category": "Storage",
+    "name": "Storage Accounts",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "Hot blobs in RA-GRS (read requests). Hot LRS/ZRS/GRS/RA-GRS (writes) & LRS Block Blob: 99.9%. Cool/Cold/Archive tiers have lower SLAs (e.g., 99% for LRS/ZRS/GRS writes). Uptime Percentage = 100% - Average Error Rate. Service Credit (99.99% tier): 10% for <99.99%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/storage/",
+    "iconId": "storage",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/storage/common/storage-account-overview"
+  },
+  {
+    "category": "Storage",
+    "name": "StorSimple",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "StorSimple Service (Backup, Cloud Tiering, Restoring) and StorSimple Data Manager. Service: Downtime if Backup/Tiering/Restoring operation fails. Data Manager: Uptime based on Total Requests vs Failed Requests. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/storsimple/",
+    "iconId": "storsimple",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/storsimple/storsimple-overview"
+  },
+  {
+    "category": "Analytics",
+    "name": "Azure Stream Analytics",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to API Calls and Jobs. API Calls: Uptime based on Total Transaction Attempts vs Failed Transactions (error or no success code within 5 mins). Jobs: Downtime if job is neither processing data nor available to process. Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/stream-analytics/",
+    "iconId": "streamanalytics",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/stream-analytics/stream-analytics-introduction"
+  },
+  {
+    "category": "Analytics",
+    "name": "Azure Synapse Analytics",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to Synapse SQL, Data Integration API Calls, Apache Spark Sessions. Synapse SQL: Downtime if >1% Client Operations fail. Data Integration API: Uptime based on Total Requests vs Failed Requests. Spark: Uptime based on successful session launch. Service Credit: 10% for <99.9% (or <99% for Spark), 25% for <99% (or <95% for Spark).",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/synapse-analytics/",
+    "iconId": "synapse",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is"
+  },
+  {
+    "category": "Analytics",
+    "name": "Azure Time Series Insights",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to data plane API. Availability Percentage = 100% - Average Error Rate (based on Failed Requests to API). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/time-series-insights/",
+    "iconId": "timeseriesinsights",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/time-series-insights/overview-what-is-tsi"
+  },
+  {
+    "category": "Networking",
+    "name": "Traffic Manager Service",
+    "slaDisplay": "100%",
+    "slaValue": 1.0,
+    "description": "Downtime: Profile unavailable (all continual DNS queries for Profile's DNS name do not result in a Valid DNS Response within two seconds). Service Credit: 10% for <100%, 25% for <99.99%, 100% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/traffic-manager/",
+    "iconId": "trafficmanager",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-overview"
+  },
+  {
+    "category": "Security",
+    "name": "Trusted Signing",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Uptime Percentage based on Total Transaction Attempts (API sign requests) vs Failed Transactions (HTTP 5xx or no success code within 90s). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/trusted-signing/",
+    "iconId": "security",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/trusted-signing/overview"
+  },
+  {
+    "category": "Compute",
+    "name": "Virtual Machines",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "For VMs deployed across two or more Availability Zones. VMs in Availability Set or same Dedicated Host Group: 99.95%. Single-Instance VMs (Premium SSD/Ultra Disk): 99.9%. (Standard SSD: 99.5%, Standard HDD: 95%). Downtime: No Virtual Machine Connectivity. Service Credit (99.99% tier): 10% for <99.99%, 25% for <99%, 100% for <95%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/virtual-machines/",
+    "iconId": "vm",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/virtual-machines/windows/overview"
+  },
+  {
+    "category": "Networking",
+    "name": "Azure Virtual Network Manager",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Azure Virtual Network Manager unavailable (all attempts to connect unsuccessful). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/virtual-network-manager/",
+    "iconId": "networking",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/virtual-network-manager/overview"
+  },
+  {
+    "category": "Networking",
+    "name": "Azure Virtual WAN",
+    "slaDisplay": "99.95%",
+    "slaValue": 0.9995,
+    "description": "Downtime: Azure Virtual WAN unavailable (all attempts to connect unsuccessful). Service Credit: 10% for <99.95%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/virtual-wan/",
+    "iconId": "virtualwan",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about"
+  },
+  {
+    "category": "Compute",
+    "name": "Azure VMware Solution",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "For stretched clusters (workload infrastructure). Standard clusters: 99.9%. Management tools (vCenter, NSX Manager): 99.9%. Downtime: VMs no connectivity, no storage access, or cannot be started; or management tools no connectivity. Service Credit (99.99% tier): 10% for <99.99%, 25% for <99% (any cluster).",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/azure-vmware-solution/",
+    "iconId": "vmware",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/azure-vmware/introduction"
+  },
+  {
+    "category": "Compute",
+    "name": "Azure VMware Solution by CloudSimple",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to Workload Infrastructure and Management Tools. Downtime: VMs no connectivity/storage/start; or management tools no connectivity. Service Credit: 10% for <99.9%, 30% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/azure-vmware-solution-by-cloudsimple/",
+    "iconId": "vmware",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/cloudsimple-vmware-solutions/cloudsimple-vmware-solutions-overview"
+  },
+  {
+    "category": "Networking",
+    "name": "Azure VNet NAT",
+    "slaDisplay": "99.99%",
+    "slaValue": 0.9999,
+    "description": "Downtime: Azure VNet NAT unavailable (all Healthy VMs have no Connectivity through VNet NAT endpoint). Service Credit: 10% for <99.99%, 25% for <99.9%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/virtual-network-nat/",
+    "iconId": "networking",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/virtual-network/nat-gateway/nat-overview"
+  },
+  {
+    "category": "Networking",
+    "name": "Virtual Network Gateway",
+    "slaDisplay": "99.95%",
+    "slaValue": 0.9995,
+    "description": "For VPN Gateway SKUs (excluding Basic) and ExpressRoute Gateway SKUs (excluding Basic). Basic Gateway: 99.9%. Downtime: Virtual Network Gateway unavailable (all connection attempts unsuccessful within 30s). Service Credit (99.95% tier): 10% for <99.95%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/vpn-gateway/",
+    "iconId": "vpngateway",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways"
+  },
+  {
+    "category": "Web",
+    "name": "Azure Web PubSub",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Applies to Standard tiers. Downtime: Web PubSub service unavailable (all attempts to send Web PubSub transactions return Error Code or no Success Code within one minute). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/web-pubsub/",
+    "iconId": "web",
+    "serviceUrl": "https://learn.microsoft.com/en-us/azure/azure-web-pubsub/overview"
+  },
+  {
+    "category": "Internet of Things",
+    "name": "Windows 10 IoT Core Services",
+    "slaDisplay": "99.9%",
+    "slaValue": 0.999,
+    "description": "Downtime: Windows 10 IoT Core Services unavailable (all continuous attempts to sign into Device Update Center or perform operation return Error Code or no Success Code within two minutes). Service Credit: 10% for <99.9%, 25% for <99%.",
+    "detailsLink": "https://azure.microsoft.com/en-us/support/legal/sla/windows-10-iot-core-services/",
+    "iconId": "iot",
+    "serviceUrl": "https://learn.microsoft.com/en-us/windows/iot-core/windows-iot-core"
+  }
+]

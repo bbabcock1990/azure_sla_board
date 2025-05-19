@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure SLA Board</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+
+    <header class="py-6 px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="header-title">Azure SLA Board</h1>
+        <p class="header-disclaimer">
+            This is an unofficial website and has no affiliation with Microsoft. 
+            It was created as a project to support ease of use for looking up Azure Service SLAs.
+        </p>
+    </header>
+
+    <main class="px-1 sm:px-2 lg:px-3 py-6 main-content-area">
+        <div class="sla-grid-wrapper shadow-xl rounded-md">
+            <div id="slaGridContainer" class="sla-grid-container">
+                 <div class="text-center col-span-full py-10 text-gray-400">Loading SLA data...</div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-6 mt-3 text-xs text-gray-500">
+        <p>&copy; <span id="currentYear"></span> Your Azure SLA Tracker. Data based on official Microsoft SLA documentation.</p>
+        <p>This is a project for informational purposes and is not affiliated with Microsoft.</p>
+    </footer>
+
+    <div id="serviceTooltip" class="tooltip">
+        <h3 id="tooltipTitle">Service Details</h3>
+        <p><strong>Category:</strong> <span id="tooltipCategory"></span></p>
+        <p><strong>SLA:</strong> <span id="tooltipSlaDisplay"></span> (<span id="tooltipSlaValue"></span>)</p>
+        <p><strong>Service Credit:</strong> <span id="tooltipServiceCredit" class="text-sm text-gray-300"></span></p>
+        <p><strong>Description:</strong></p>
+        <p id="tooltipDescription" class="text-sm text-gray-300"></p> 
+        <p><a id="tooltipDetailsLink" href="#" target="_blank" rel="noopener noreferrer">Official SLA Document</a></p>
+    </div>
+
+   <script src="script.js"></script>
+</body>
+</html>
