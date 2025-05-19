@@ -22,6 +22,22 @@ Azure SLA Board is an unofficial web application that provides a visual, interac
 
 > **Note:** This project is for informational purposes only and is not affiliated with Microsoft.
 
+## Deploying to Azure Static Web Apps
+
+You can easily deploy this project as an [Azure Static Web App](https://learn.microsoft.com/en-us/azure/static-web-apps/overview):
+
+1. **Push your code to GitHub** (if not already).
+2. **In the Azure Portal**, create a new Static Web App and link it to your GitHub repository.
+3. **Build Details:**
+    - **App location:** `azure_sla_board`
+    - **Output location:** (leave blank)
+    - **API location:** (leave blank)
+4. **Azure will automatically build and deploy your site.**
+5. After deployment, your app will be available at the provided Azure Static Web Apps URL.
+
+**Tip:**  
+If you update `azure_slas.json`, push your changes to GitHub and Azure will redeploy your site.
+
 ## Project Structure
 
 ```
